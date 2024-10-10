@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            display: flex;
+            justify-content: center;
+        }
+        .child{
+            border: solid black 1px;
+            margin: 70px;
+            height: 350px;
+            width: 250px;
+           border-radius: 5px;
+           cursor: pointer;
+           transition: transform 0.3s;
+        }
+        .child:hover{
+            transform: scale(1.1);
+        }
+        .child-two{
+            height: 30px;
+            width: 250px;
+            border: solid black 1px;
+            margin: 70px;
+            cursor: pointer;
+            transition: transform  0.3s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .child-two:hover{
+            transform: scale(1.1);
+        }
+      
+    
+    </style>
+</head>
+<body>
+     <div class="parent">
+       <div class="child" onclick="sum()">
+         <img src="https://as1.ftcdn.net/v2/jpg/01/33/95/38/1000_F_133953873_Qu2v02ymabr5d2XlYT34KavXSbA3LyUb.jpg" alt="image" height="350px" width="250px">
+
+
+       </div>
+       <div class="child" onclick="add()">
+          <img src="https://img.freepik.com/free-photo/young-woman-with-shopping-bags-beautiful-dress-hat_1303-17524.jpg?t=st=1728541602~exp=1728545202~hmac=c6edc2b355fab58c06149849382ff8d32300c806b03bef37b2385151aa32a6cd&w=900" height="350px" width="250px">
+
+
+       </div>
+       <div class="child" onclick="gone()">
+        <img src="https://img.freepik.com/free-photo/full-length-portrait-cute-little-girl-hat_171337-13768.jpg?t=st=1728541734~exp=1728545334~hmac=e0f7d5daf80cc255d529b37816c322bf9695c7747d6137189f9821e8d35b0a84&w=740" height=350px; width="250px">
+       </div>
+     </div>
+     <div style="display: flex; justify-content: center;">
+        <div class="child-two" onclick="sum()"><h2>MEN'S WEAR</h2></div>
+        <div class="child-two" onclick="add()"><h2>WOMEN'S WEAR</h2></div>
+        <div class="child-two" onclick="gone()"><h2>KIDS WEAR</h2></div>
+        </div>
+      <script>
+        function sum() {
+           location.href="mens.html"
+        }
+        function add(){
+            location.href="womens.html"
+        }
+        function gone(){
+           location.href="kids.html"
+        }
+        
+      </script>
+</body>
+</html>

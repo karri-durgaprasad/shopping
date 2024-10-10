@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,body{
+            margin: 0;
+            padding: 0;
+        }
+        .parent{
+            background-image:url("https://images.pexels.com/photos/972887/pexels-photo-972887.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") ;
+           background-repeat: no-repeat;
+           background-size: cover;
+           height: 100vh;
+           position: relative;
+          
+        
+        }
+        .class-header{
+            display: flex;
+            justify-content: end;
+            padding-right: 70px;
+
+            
+        }
+        .class-button{
+            cursor: pointer;
+            background-color: antiquewhite;
+            border: none;
+            border: black  solid  1px;
+            padding: 20px;
+            padding-left: 30px;
+            padding-right: 30px;
+            border-radius: 5px;
+            position: absolute;
+            bottom: 20%;
+            left: 45%;
+            transition: transform 0.3s
+
+        }
+        button:active{
+          background-color: azure;
+        transform: scale(0.9);
+          
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="class-header">
+            <p style="margin: 15px; cursor: pointer;">Home</p>
+            <p style="margin: 15px; cursor: pointer;">Shoppig</p>
+            <p style="margin: 15px; cursor: pointer;">About us</p>
+            <p style="margin: 15px; cursor: pointer;">Contact us</p>
+        </div>
+        <button class="class-button" onclick="sum()">VIEW COLLOCTION</button>
+    </div>
+    <script>
+        function sum() {
+              location.href="front.html"
+        }
+    </script>
+</body>
+</html5
